@@ -66,3 +66,13 @@ A continuación se crea un nuevo issue para cada punto especificado en el enunci
 Además, el proyecto "Baloncesto" del repositorio, tras mover los issues de "No asignados" a "Todo", queda de la siguiente forma:
 
 ![Proyecto tras crear milestone](/images/proyecto-tras-crear-milestone.png)
+
+## 3. Configuración SonarQube
+
+Antes de comenzar a desarrollar es necesario configurar SonarQube para que si el proyecto tiene más major issues que 20 no se pueda desplegar la aplicación a producción.
+
+Para realizar esta configuración accedemos al panel de administración de SonarQube y en la pestaña Quality Gates modificamos el valor "Major Issues is greater than" a 20:
+
+![SonarQube major issues a 20](/images/sonarqube-major-20.png)
+
+De esta forma el job "qa" del workflow fallará si los Major Issues son mayores a 20, y el equipo de aprovación deberá rechazarlo al ver que ha fallado el workflow, evitando que pase a producción.
