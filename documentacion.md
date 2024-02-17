@@ -92,3 +92,19 @@ Tras haber realizado un commit con la implementación del botón que pone los vo
 Ahora que esta tarea está terminada se cierra el Issue, y se mueve la tarea PU (Realizar caso de prueba para actualizarJugador) a la columna "In progress":
 
 ![Proyecto tras REQ-1](/images/proyecto-tras-REQ-1.png)
+
+Tras subir el commit con el test simulando la comprobación de que se incrementen los votos en 1 cuando se ejecuta actualizarJugador(), y comprobar que pasa los checks que debería, se crea una pull request contra la rama main y se mergea.
+
+Además, se cierra el issue y se mueve a "Done".
+
+Tras mergearse contra main comienza un nuevo workflow donde se desplegará la aplicación en el servidor de preproducción, y tras comprobar que funciona correctamente se da la aprovación para incluirla en el servidor de producción.
+
+Así se ve la página en preproducción con el botón nuevo (bajo el título de la página) para resetear votos:
+
+![Nuevo botón](/images/pre-tras-req-1.png)
+
+Y este es el resultado de SonarQube:
+
+![Sonar tras REQ-1](/images/sonar-tras-req-1.png)
+
+Por lo tanto, se puede autorizar el paso de la aplicación a producción.
