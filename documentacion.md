@@ -76,3 +76,9 @@ Para realizar esta configuración accedemos al panel de administración de Sonar
 ![SonarQube major issues a 20](/images/sonarqube-major-20.png)
 
 De esta forma el job "qa" del workflow fallará si los Major Issues son mayores a 20, y el equipo de aprovación deberá rechazarlo al ver que ha fallado el workflow, evitando que pase a producción.
+
+## 4. REQ-1 Poner votos a cero
+
+Antes de comenzar a desarrollar la nueva funcionalidad del requisito 1, se crea una nueva rama en el repositorio llamada REQ-1\_\_poner-votos-a-cero. Además, como se va a empezar a trabajar con el issue REQ-1, este pasa al estado "In Progress" en el proyecto del repositorio.
+
+![REQ-1 en progreso](/images/req-1-in-progress.png)

@@ -7,3 +7,7 @@ body {
   color: yellow;
   background-color: darkred;
 }
+
+p {
+  text-align: left;
+}
