@@ -76,3 +76,19 @@ Para realizar esta configuración accedemos al panel de administración de Sonar
 ![SonarQube major issues a 20](/images/sonarqube-major-20.png)
 
 De esta forma el job "qa" del workflow fallará si los Major Issues son mayores a 20, y el equipo de aprovación deberá rechazarlo al ver que ha fallado el workflow, evitando que pase a producción.
+
+Finalmente marcamos este issue "QA" como cerrado.
+
+## 4. REQ-1 Poner votos a cero
+
+Antes de comenzar a desarrollar la nueva funcionalidad del requisito 1, se crea una nueva rama en el repositorio llamada REQ-1\_\_poner-votos-a-cero. Además, como se va a empezar a trabajar con el issue REQ-1, este pasa al estado "In Progress" en el proyecto del repositorio.
+
+![REQ-1 en progreso](/images/req-1-in-progress.png)
+
+Tras haber realizado un commit con la implementación del botón que pone los votos a cero y la corrección de algunos major issues, el resultado del workflow para este commit es satisfactorio, habiendo pasado también el job de qa:
+
+![Workflow añadir votos](/images/workflow-añadir-votos.png)
+
+Ahora que esta tarea está terminada se cierra el Issue, y se mueve la tarea PU (Realizar caso de prueba para actualizarJugador) a la columna "In progress":
+
+![Proyecto tras REQ-1](/images/proyecto-tras-REQ-1.png)
