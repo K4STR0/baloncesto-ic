@@ -12,6 +12,10 @@
         <servlet-class>VotosACero</servlet-class>
     </servlet>
     <servlet-mapping>
+        <servlet-name>VerVotos</servlet-name>
+        <url-pattern>/VerVotos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>Acb</servlet-name>
         <url-pattern>/Acb</url-pattern>
     </servlet-mapping>
@@ -19,6 +23,10 @@
         <servlet-name>VotosACero</servlet-name>
         <url-pattern>/VotosACero</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>VerVotos</servlet-name>
+        <servlet-class>VerVotos</servlet-class>
+    </servlet>
     <session-config>
         <session-timeout>
             30
