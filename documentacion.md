@@ -133,4 +133,12 @@ Y este es el resultado de los tests:
 
 ![Resultado tests REQ-2](/images/resultado-tests-req-2.png)
 
-Por lo tanto, se puede mergear la rama a main.
+Por lo tanto, cerramos los issues PF-A y PF-B y ya se puede mergear la rama a main.
+
+## 5. Cierre del proyecto
+
+Finalmente, tras mergear la rama en main y desplegar en stage, se aprueba también el despliegue en producción, ya que pasa el control de calidad de SonarQube.
+
+Tras desplegar en producción el milestone ya está completado y se puede cerrar.
+
+![Milestones cerrados](/images/milestones-cerrados.png)
