@@ -108,3 +108,29 @@ Y este es el resultado de SonarQube:
 ![Sonar tras REQ-1](/images/sonar-tras-req-1.png)
 
 Por lo tanto, se puede autorizar el paso de la aplicación a producción.
+
+## 4. REQ-2 Visualización de votos
+
+Tras la implementación del primer requisito y su fusión con la rama main, se continúa con la visualización, para ello se crea una rama llamada REQ-2\_\_ver-votos, y se añade a la columna "In progress" del proyecto el issue REQ-2.
+
+Tras la implementación de la página de resultados y el botón en la página principal así es como se ve la página:
+
+![Pagina tras REQ-2](/images/pagina-tras-req-2.png)
+
+Y esta es la página de los resultados:
+
+![Resultados tras REQ-2](/images/votaciones-tras-req-2.png)
+
+Como se puede apreciar la página se muestra en la IP 192.168.1.147, esto es por que estoy ejecutando el contenedor de ubuntu donde se ejecutan los workflows "test" y "qa" en una máquina Windows en mi red local, distinta al PC donde estoy desarrollando, ya que mi PC personal tiene una arquitectura ARM64 y la imagen de ubuntu era x86-64, lo que provocaba problemas si lo ejecutaba bajo ARM64. Concretamente el problema que tenía era que se bloqueaban los jobs sin ningún motivo.
+
+Tras terminar de implementar esta funcionalidad se cierra el issue REQ-2 y se añaden los tests PF-A y PF-B a "In progress".
+
+Finalmente, al finalizar y commitear los tests que comprueban el botón de poner votos a cero y de votar a otro jugador (y arreglar algunos major issues de SonarQube), todos los jobs de la rama pasan satisfactoriamente (build, test y qa):
+
+![Jobs tras tests REQ-2](/images/jobs-tras-tests.png)
+
+Y este es el resultado de los tests:
+
+![Resultado tests REQ-2](/images/resultado-tests-req-2.png)
+
+Por lo tanto, se puede mergear la rama a main.

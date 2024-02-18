@@ -2,7 +2,8 @@
 Document : index.html
 Author : Roberto Barchino (aplicacion original)
 -->
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
         <title>Votacion mejor jugador liga ACB</title>
         <link href="estilos.css" rel="stylesheet" type="text/css" />
@@ -12,6 +13,10 @@ Author : Roberto Barchino (aplicacion original)
     <!-- Botón para poner los votos de los jugadores a 0 -->
     <form action="VotosACero" method="POST">
         <input type="submit" name="B3" value="Resetear votos">
+    </form>
+    <!-- Botón para poner los votos de los jugadores a 0 -->
+    <form action="VerVotos" method="POST">
+        <input type="submit" name="B4" value="Ver votos">
     </form>
     <form action="Acb" method="POST">
         <p>Nombre del Visitante: <input type="text" size="20"
