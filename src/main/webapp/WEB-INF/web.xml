@@ -7,9 +7,17 @@
         <servlet-name>Acb</servlet-name>
         <servlet-class>Acb</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VotosACero</servlet-name>
+        <servlet-class>VotosACero</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Acb</servlet-name>
         <url-pattern>/Acb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VotosACero</servlet-name>
+        <url-pattern>/VotosACero</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
