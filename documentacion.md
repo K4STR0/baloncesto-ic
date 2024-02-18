@@ -108,3 +108,7 @@ Y este es el resultado de SonarQube:
 ![Sonar tras REQ-1](/images/sonar-tras-req-1.png)
 
 Por lo tanto, se puede autorizar el paso de la aplicación a producción.
+
+## 4. REQ-2 Visualización de votos
+
+Tras la implementación del primer requisito y su fusión con la rama main, se continúa con la visualización, para ello se crea una rama llamada REQ-2\_\_ver-votos, y se añade a la columna "In progress" del proyecto el issue REQ-
