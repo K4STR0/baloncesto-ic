@@ -22,4 +22,16 @@ public class Jugador {
     public int getVotos() {
         return votos;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setVotos(int votos) {
+        this.votos = votos;
+    }
 }
