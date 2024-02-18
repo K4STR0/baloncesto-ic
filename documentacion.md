@@ -125,3 +125,12 @@ Como se puede apreciar la página se muestra en la IP 192.168.1.147, esto es por
 
 Tras terminar de implementar esta funcionalidad se cierra el issue REQ-2 y se añaden los tests PF-A y PF-B a "In progress".
 
+Finalmente, al finalizar y commitear los tests que comprueban el botón de poner votos a cero y de votar a otro jugador (y arreglar algunos major issues de SonarQube), todos los jobs de la rama pasan satisfactoriamente (build, test y qa):
+
+![Jobs tras tests REQ-2](/images/jobs-tras-tests.png)
+
+Y este es el resultado de los tests:
+
+![Resultado tests REQ-2](/images/resultado-tests-req-2.png)
+
+Por lo tanto, se puede mergear la rama a main.
