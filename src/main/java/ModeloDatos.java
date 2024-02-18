@@ -2,6 +2,7 @@ import model.Jugador;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ModeloDatos {
@@ -115,7 +116,7 @@ public class ModeloDatos {
             System.out.println("No lee de la tabla");
             System.out.println("El error es: " + e.getMessage());
         }
-        return null;
+        return Collections.emptyList();
     }
 
     public void cerrarConexion() {

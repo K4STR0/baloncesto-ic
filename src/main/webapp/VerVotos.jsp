@@ -2,7 +2,8 @@
 <%@ page import="model.Jugador" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <title>Resultados votaciones</title>
 </head>
